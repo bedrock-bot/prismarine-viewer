@@ -5,7 +5,7 @@ const { Schematic } = require('prismarine-schematic')
 global.THREE = require('three')
 
 async function main () {
-  const version = '1.16.4'
+  const version = '1.21.8'
   const data = await fetch('smallhouse1.schem').then(r => r.arrayBuffer())
   const schem = await Schematic.read(Buffer.from(data), version)
 
